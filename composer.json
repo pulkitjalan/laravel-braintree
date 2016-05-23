@@ -1,0 +1,22 @@
+{
+    "name": "pulkitjalan/laravel-braintree",
+    "description": "Laravel Service Provider for Braintree",
+    "homepage": "https://github.com/pulkitjalan/laravel-braintree",
+    "keywords": ["laravel", "braintree"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pulkit Jalan"
+        }
+    ],
+    "require": {
+        "php": ">=5.5",
+        "illuminate/support": "~5",
+        "braintree/braintree_php" : "~3"
+    },
+    "autoload": {
+        "psr-4": {
+            "PulkitJalan\\Braintree\\": "src"
+        }
+    }
+}
