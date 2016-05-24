@@ -2,7 +2,7 @@
 
 namespace PulkitJalan\Braintree;
 
-use Braintree_Configuration;
+use Braintree\Configuration;
 use Illuminate\Support\ServiceProvider;
 
 class BraintreeServiceProvider extends ServiceProvider
@@ -19,10 +19,10 @@ class BraintreeServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Braintree_Configuration::environment($this->app['config']->get('service.braintree.environment'));
-        Braintree_Configuration::merchantId($this->app['config']->get('service.braintree.merchant_id'));
-        Braintree_Configuration::publicKey($this->app['config']->get('service.braintree.public_key'));
-        Braintree_Configuration::privateKey($this->app['config']->get('service.braintree.private_key'));
+        Configuration::environment($this->app['config']->get('services.braintree.environment'));
+        Configuration::merchantId($this->app['config']->get('services.braintree.merchant_id'));
+        Configuration::publicKey($this->app['config']->get('services.braintree.public_key'));
+        Configuration::privateKey($this->app['config']->get('services.braintree.private_key'));
     }
 
     /**
