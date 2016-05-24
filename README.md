@@ -31,3 +31,14 @@ Next, You should configure the following options in your `services.php` file:
     'private_key' => env('BRAINTREE_PRIVATE_KEY'),
 ],
 ```
+
+Finally, set the environment variables in your `.env` file:
+
+```
+BRAINTREE_ENV=YOUR_BRAINTREE_ENV
+BRAINTREE_MERCHANT_ID=YOUR_BRAINTREE_MERCHANT_ID
+BRAINTREE_PUBLIC_KEY=YOUR_BRAINTREE_PUBLIC_KEY
+BRAINTREE_PRIVATE_KEY=YOUR_BRAINTREE_PRIVATE_KEY
+```
+
+https://articles.braintreepayments.com/control-panel/important-gateway-credentials
